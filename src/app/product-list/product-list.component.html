@@ -1,0 +1,36 @@
+<p>product-list works!</p>
+<!-- <button type="button" class="btn btn-primary primary">
+    Button
+</button> -->
+
+
+
+<div class="row">
+    <div class="col-4"  *ngFor="let data of product" [attr.product-id]="data.id"
+    [id]="data.id"
+    >
+      <span>
+        {{data.id}}
+      </span>
+      <span>
+        {{data.title}}
+      </span>
+      <!-- <span>
+        <img src="{{data.images[0]}}">
+      </span> -->
+      <!-- <span>
+        <img src="data.thumbnail">
+      </span> -->
+      <div>
+        <img [src]="data.thumbnail">
+      </div>
+      <button type="button" class="btn btn-primary primary" (click)="getProductsDetail(data.id)">
+        detail
+    </button>
+    </div>
+  </div>
+
+
+
+
+  <!-- [ngClass]="{'is-odd': data.id % 2 == 0 }" -->
