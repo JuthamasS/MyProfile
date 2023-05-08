@@ -10,13 +10,19 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductInsertComponent } from './product-insert/product-insert.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { FormsModule } from '@angular/forms';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ProductDetailComponent,
-    ProductInsertComponent
+    ProductInsertComponent,
+    ContactPageComponent,
+    HomePageComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
